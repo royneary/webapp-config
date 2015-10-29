@@ -356,6 +356,16 @@ class Gatling(Basic):
         self.vhost_server_uid = get_user('gatling')
         self.vhost_server_gid = get_group('gatling')
 
+class Hiawatha(Basic):
+
+    name   = 'Hiawatha'
+    desc   = 'supports installation on Hiawatha'
+    dep    = 'www-servers/hiawatha'
+
+    def set_server_user(self):          
+        self.vhost_server_uid = get_user('hiawatha')
+        self.vhost_server_gid = get_group('hiawatha')
+
 class Tracd(Basic):
 
     name   = 'Tracd'
@@ -373,4 +383,5 @@ def listservers():
                           'cherokee',
                           'nginx',
                           'gatling',
+                          'hiawatha',
                           'tracd',]))

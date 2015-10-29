@@ -1581,6 +1581,7 @@ class Config:
                            'cherokee' : WebappConfig.server.Cherokee,
                            'nginx'    : WebappConfig.server.Nginx,
                            'gatling'  : WebappConfig.server.Gatling,
+                           'hiawatha' : WebappConfig.server.Hiawatha,
                            'tracd'    : WebappConfig.server.Tracd,}
 
 
